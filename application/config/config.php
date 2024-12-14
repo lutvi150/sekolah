@@ -1,0 +1,66 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+$root = "http://".$_SERVER['HTTP_HOST'];
+$root .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
+$pc_root = explode("/", $root);
+$uri_js = count($pc_root) - 2;
+// this for costume template
+$config['template']='1';
+$config['school']="SMAN 2 Takengon";
+// 
+$config['key']='d67d8ab4f4c10bf22aa353e27879133c';
+$config['jml_opsi']			= 5;			//isi dengan pilihan opsi jawaban, HARUS <= 5
+$config['uri_js']			= $uri_js;		
+$config['editor_style']		= "replace";	//pilihannya "inline" atau "replace";
+$config['nama_aplikasi']	= "E-Modul Fisika";
+$config['versi']			= "1.0";
+$config['tgl']				= "28072018";
+$config['tampil_nilai']		= TRUE; // jika siswa boleh melihat hasil ujian, isikan TRUE, jika tidak FALSE, default TRUE
+$config['base_url'] = $root;
+$config['index_page'] = 'index.php';
+$config['uri_protocol']	= 'REQUEST_URI';
+$config['url_suffix'] = '';
+$config['language']	= 'english';
+$config['charset'] = 'UTF-8';
+$config['enable_hooks'] = FALSE;
+$config['subclass_prefix'] = 'MY_';
+$config['composer_autoload'] = FALSE;
+$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
+$config['enable_query_strings'] = FALSE;
+$config['controller_trigger'] = 'c';
+$config['function_trigger'] = 'm';
+$config['directory_trigger'] = 'd';
+$config['allow_get_array'] = TRUE;
+$config['log_threshold'] = 0;
+$config['log_path'] = '';
+$config['log_file_extension'] = '';
+$config['log_file_permissions'] = 0644;
+$config['log_date_format'] = 'Y-m-d H:i:s';
+$config['error_views_path'] = '';
+$config['cache_path'] = '';
+$config['cache_query_string'] = FALSE;
+$config['encryption_key'] = '';
+$config['sess_driver'] = 'files';
+$config['sess_cookie_name'] = 'ci_session';
+$config['sess_expiration'] = 7200;
+$config['sess_save_path'] = NULL;
+$config['sess_match_ip'] = FALSE;
+$config['sess_time_to_update'] = 300;
+$config['sess_regenerate_destroy'] = FALSE;
+$config['cookie_prefix']	= '';
+$config['cookie_domain']	= '';
+$config['cookie_path']		= '/';
+$config['cookie_secure']	= FALSE;
+$config['cookie_httponly'] 	= FALSE;
+$config['standardize_newlines'] = FALSE;
+$config['global_xss_filtering'] = FALSE;
+$config['csrf_protection'] = FALSE;
+$config['csrf_token_name'] = 'csrf_test_name';
+$config['csrf_cookie_name'] = 'csrf_cookie_name';
+$config['csrf_expire'] = 7200;
+$config['csrf_regenerate'] = TRUE;
+$config['csrf_exclude_uris'] = array();
+$config['compress_output'] = FALSE;
+$config['time_reference'] = date_default_timezone_set('Asia/Jakarta');;
+$config['rewrite_short_tags'] = FALSE;
+$config['proxy_ips'] = '';
