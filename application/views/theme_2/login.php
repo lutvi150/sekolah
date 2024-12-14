@@ -9,10 +9,10 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<!-- Favicon icon -->
-	<link rel="shortcut icon" href="<?php echo base_url();?>gambar/gambar_web/favicon-96x96.png" type="image/x-icon">
-	<title><?=$this->config->item('school')?></title>
+	<link rel="shortcut icon" href="<?php echo base_url(); ?>gambar/gambar_web/favicon-96x96.png" type="image/x-icon">
+	<title><?= $this->config->item('school') ?></title>
 	<!-- Custom CSS -->
-	<link href="<?=base_url()?>asset/theme_2/css/style.css" rel="stylesheet">
+	<link href="<?= base_url() ?>asset/theme_2/css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -26,7 +26,6 @@
 	.red {
 		color: red;
 	}
-
 </style>
 
 <body>
@@ -47,22 +46,22 @@
 		<!-- Login box.scss -->
 		<!-- ============================================================== -->
 		<div class="auth-wrapper d-flex no-block justify-content-center align-items-center position-relative"
-			style="background:url('<?=base_url();?>gambar/gambar_web/auth-bg.jpg') no-repeat center center;">
+			style="background:url('<?= base_url(); ?>gambar/gambar_web/auth-bg.jpg') no-repeat center center;">
 			<div class="auth-box row">
 				<!-- <div class="col-lg-7 col-md-5 modal-bg-img"
-					style="background-image: url('<?=base_url();?>gambar/gambar_web/auth-login.jpg');with:100%;">
+					style="background-image: url('<?= base_url(); ?>gambar/gambar_web/auth-login.jpg');with:100%;">
 				</div>
 				 -->
-				 <!-- <div class="col-lg-7 col-md-5 modal-bg-img" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ed/SMA_Negeri_2_Padang_Panjang.jpg');" ></div> -->
-				 				 <div class="col-lg-7 col-md-5 modal-bg-img" style="background-image: url('<?=base_url('gambar/gambar_web/t4OqqkDgDlMpYzuLe2JRWyUWvtOYFbfYYOJUz3oy.jpg');?>');" ></div>
+				<!-- <div class="col-lg-7 col-md-5 modal-bg-img" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ed/SMA_Negeri_2_Padang_Panjang.jpg');" ></div> -->
+				<div class="col-lg-7 col-md-5 modal-bg-img" style="background-image: url('<?= base_url('gambar/gambar_web/t4OqqkDgDlMpYzuLe2JRWyUWvtOYFbfYYOJUz3oy.jpg'); ?>');"></div>
 				<div class="col-lg-5 col-md-7 bg-white">
 					<div class="p-3">
 						<div class="text-center">
-							<img src="<?=base_url();?>gambar/gambar_web/sman15takengon.png" style="width: 30%;"
+							<img src="<?= base_url(); ?>gambar/gambar_web/sman15takengon.png" style="width: 30%;"
 								alt="wrapkit">
 						</div>
 						<h2 class="mt-3 text-center header-login">Login</h2>
-						<p class="text-center"><?=$this->config->item('nama_aplikasi')?></p>
+						<p class="text-center"><?= $this->config->item('nama_aplikasi') ?></p>
 
 						<div id="message_error" hidden class="alert alert-danger alert-dismissible">
 							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -97,12 +96,12 @@
 										</div>
 										<span class="">Login Proses mohon tunggu...</span>
 									</div>
-										<button type="button" class="btn btn-block btn-dark button-login"
-											onclick="processLogin()">Login</button>
+									<button type="button" class="btn btn-block btn-dark button-login"
+										onclick="processLogin()">Login</button>
 									<button class="btn btn-block btn-dark">
 										<img width="20px" style="margin-bottom:3px; margin-right:5px"
 											alt="Google sign-in"
-											src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+											src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" />
 										Login with Google
 									</button>
 								</div>
@@ -170,7 +169,7 @@
 									<button class="btn btn-block btn-dark">
 										<img width="20px" style="margin-bottom:3px; margin-right:5px"
 											alt="Google sign-in"
-											src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+											src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" />
 										Register with Google
 									</button>
 								</div>
@@ -189,29 +188,29 @@
 	</div>
 
 </body>
-<script src="<?php echo base_url();?>asset/jquery/dist/jquery.js"></script>
+<script src="<?php echo base_url(); ?>asset/jquery/dist/jquery.js"></script>
 <!-- Bootstrap -->
-<script src="<?php echo base_url();?>asset/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>asset/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
 	function hideAlert(prom) {
-		window.setTimeout(function () {
-			$(prom).fadeTo(1000, 0).slideUp(500, function () {
+		window.setTimeout(function() {
+			$(prom).fadeTo(1000, 0).slideUp(500, function() {
 				$(this).hide();
 			});
 		}, 6000);
 	}
 
-	$('#btnlogin').on('click', function () {
+	$('#btnlogin').on('click', function() {
 		$('#login').modal('show');
 	});
-	$('#sudah').on('click', function () {
+	$('#sudah').on('click', function() {
 		$('#verifikasi_login').submit();
 	});
-	$('#btntutorial').click(function (e) {
+	$('#btntutorial').click(function(e) {
 		$('#tutorial').modal('show');
 	});
 	$(".preloader ").fadeOut();
-	$(document).ready(function () {
+	$(document).ready(function() {
 		showLogin();
 	});
 
@@ -235,13 +234,13 @@
 		$('.login-form').hide();
 		$('.register-form').removeAttr('hidden style');
 	}
-function make_(){
-		$.ajax(
-			{
 
-			}
-		)
-}
+	function make_() {
+		$.ajax({
+
+		})
+	}
+
 	function processLogin() {
 		$(".show-loading").removeAttr('hidden style');
 		$(".button-login").hide();
@@ -252,15 +251,15 @@ function make_(){
 		}
 		$.ajax({
 			type: "POSt",
-			url: "<?=base_url();?>ApiController/verifikasi_login",
+			url: "<?= base_url(); ?>ApiController/verifikasi_login",
 			data: data,
 			dataType: "JSON",
-			success: function (response) {
+			success: function(response) {
 				if (response.msg == 'Login Success') {
 					// console.log('success');
 					$(".show-loading").hide();
 					$(".button-login").removeAttr('hidden style');
-					window.location.href = "<?=base_url()?>";
+					window.location.href = "<?= base_url() ?>";
 				} else if (response.msg == 'Login Failed') {
 					$(".show-loading").hide();
 					$(".button-login").removeAttr('hidden style');
@@ -283,10 +282,10 @@ function make_(){
 		}
 		$.ajax({
 			type: "POST",
-			url: "<?=base_url()?>ApiController/daftar_baru",
+			url: "<?= base_url() ?>ApiController/daftar_baru",
 			data: data,
 			dataType: "JSON",
-			success: function (response) {
+			success: function(response) {
 				if (response.msg == 'Register Success') {
 					$(".text-success").text(
 						"Pendaftaran berhasil di lakukan, silahkan di lanjutkan untuk login");
@@ -318,12 +317,11 @@ function make_(){
 		}
 	}
 	var wage = document.getElementById("wage");
-	wage.addEventListener("keydown", function (e) {
+	wage.addEventListener("keydown", function(e) {
 		if (e.code === "Enter") { //checks whether the pressed key is "Enter"
 			processLogin();
 		}
 	});
-
 </script>
 
 </html>

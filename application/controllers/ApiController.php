@@ -5,10 +5,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class ApiController extends CI_Controller
 {
 
-    public function index()
-    {
-
-    }
+    public function index() {}
     public function verifikasi_login()
     {
         $username = $this->input->post('username');
@@ -30,7 +27,8 @@ class ApiController extends CI_Controller
                     'text_menu' => '#E7E7E7',
                 );
                 $update_status = array(
-                    'seting' => 'Sudah');
+                    'seting' => 'Sudah'
+                );
                 if ($check_seting == null) {
                     $this->Model->insert_data('seting', $data_seting);
                 } else {
@@ -56,7 +54,6 @@ class ApiController extends CI_Controller
                 'msg' => 'Login Success',
                 'content' => null,
             ];
-
         } else {
             $respon = [
                 'status' => 'failed',
@@ -65,7 +62,6 @@ class ApiController extends CI_Controller
                 'msg' => 'Login Failed',
                 'content' => null,
             ];
-
         }
         echo json_encode($respon);
     }
@@ -140,7 +136,6 @@ class ApiController extends CI_Controller
         ];
         echo json_encode($response);
     }
-
 }
 
 /* End of file  ApiController.php */
